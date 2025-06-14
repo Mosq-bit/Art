@@ -1,0 +1,138 @@
+.slider {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 40px 50px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: 100%;
+}
+
+/* По умолчанию (десктоп) — 3 слайда */
+.slide {
+    margin-top: 20px;
+    flex: 0 0 33.33%; /* 3 слайда */
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Кнопки навигации */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next {
+    right: 0;
+}
+
+.prev {
+    left: 0;
+}
+
+/* Точки навигации */
+.dots {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.dot {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dot.active {
+    background: #333;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1024px) {
+    /* Оставляем 3 слайда (можно убрать, если поведение такое же) */
+}
+
+@media (max-width: 768px) {
+    .slider {
+        padding: 0 30px;
+    }
+
+    .slide {
+        flex: 0 0 50%; /* 2 слайда */
+    }
+
+    .prev,
+    .next {
+        width: 35px;
+        height: 35px;
+        padding: 10px;
+    }
+
+    .slide img {
+        max-height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider {
+        padding: 0 25px;
+    }
+
+    .slide {
+        flex: 0 0 100%; /* 1 слайд */
+    }
+
+    .prev,
+    .next {
+        width: 30px;
+        height: 30px;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    .dots {
+        padding: 10px 0;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .slide img {
+        max-height: 250px;
+    }
+}

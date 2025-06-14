@@ -1,0 +1,30 @@
+.stock__section {
+    padding: 40px 0;
+}
+
+.section__info {}
+
+.stock__section__title {}
+
+.section__title {}
+
+.stock__section-link {}
+
+.section__link {}
+
+.categories__icon {}
+
+@media (max-width: 480px) {
+
+
+    .stock__cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .categories__title {
+        font-size: 24px;
+    }
+}

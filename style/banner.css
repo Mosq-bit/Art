@@ -1,0 +1,126 @@
+.banner__section {
+    margin-top: 30px;
+    padding: 120px 0 140px;
+    background-image: url(/assets/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-size: contain; */
+}
+
+.banner__wrapper {
+    padding-left: 20px;
+    /* padding-right: 20px; */
+    width: 100%;
+    max-width: 700px;
+    color: var(--white);
+}
+
+.banner__title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.banner__highlight {
+    display: block;
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.banner__buttons {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.banner__link-btn {
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: 2px solid var(--white);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    transition: all .4s ease-in;
+    color: var(--white);
+    text-align: center;
+    flex: 1 1 auto;
+}
+
+.banner__link-btn:hover {
+    color: var(--black);
+    background-color: var(--white);
+}
+
+/* Медиазапросы для адаптации */
+@media (max-width: 992px) {
+    .banner__section {
+        padding: 130px 0 139px;
+    }
+    
+    .banner__title {
+        font-size: 80px;
+    }
+    
+    .banner__highlight {
+        font-size: 63px;
+    }
+    
+    .banner__buttons {
+        margin-top: 60px;
+        gap: 40px;
+    }
+    
+    .banner__link-btn {
+        padding: 25px 50px;
+        font-size: 25px;
+        border-radius: 13px;
+    }
+}
+@media (max-width: 768px) {
+     .banner__section {
+        padding: 100px 20px 20px;
+    }
+    
+    .banner__wrapper {
+        padding-left: 40px;
+        padding-right: 0;
+    }
+    
+    .banner__title {
+        font-size: 60px;
+    }
+    
+    .banner__highlight {
+        font-size: 50px;
+    }
+    
+    .banner__buttons {
+
+        gap: 30px;
+        
+    }
+    
+    .banner__link-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
+
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+   
+    .banner__title {
+        font-size: 36px;
+    }
+    
+    .banner__highlight {
+        font-size: 28px;
+    }
+    
+    .banner__link-btn {
+        width: 100%;
+    }
+}

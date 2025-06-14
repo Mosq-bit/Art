@@ -1,0 +1,31 @@
+:root {
+    --pink:#f188f2;
+    --black:#000;
+    --white:#fff;
+
+    --hover-pink: #fc42ff;
+    --hover-pink2: #c949ca;
+    --grey: #7c7c7c;
+
+    
+    
+    
+    
+    --font-family: "Montserrat", sans-serif;
+
+}
+
+@media (max-width:1200px) {
+    
+}
+@media (max-width:992px) {
+    
+}
+@media (max-width:768px) {
+    
+}
+
+/* :hover{
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+} */

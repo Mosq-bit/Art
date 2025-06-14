@@ -1,0 +1,191 @@
+/* Основные стили секции */
+.categories__section {
+  padding: 60px 0;
+}
+
+.categories__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Стили заголовка и ссылки */
+.section__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+}
+
+.categories__info-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4a90e2;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.categories__info-link:hover {
+  color: #2a6ec6;
+}
+
+.categories__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Стили карточек */
+.categories__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.hit__cards,
+.stock__cards {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+
+}
+
+.categories__card {
+  width: 100%;
+  max-width: 250px;
+  
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border-radius: 7px;
+}
+
+.categories__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.categories__card-img-wrapper {
+  position: relative;
+  padding-top: 100%;
+  /* Квадратное соотношение */
+  overflow: hidden;
+}
+
+.categories__card-pic {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: transform 0.5s ease;
+  border-radius: 7px;
+}
+
+.categories__card:hover .categories__card-pic {
+  transform: scale(1.05);
+}
+
+.categories__card-info {
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stock__card-info {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 244px;
+}
+
+.card__prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 0 10px 0;
+}
+
+.card__price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #333;
+}
+
+.card__last-price {
+  font-size: 14px;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.card__discount {
+  font-size: 14px;
+  font-weight: 700;
+  color: #e74c3c;
+  background: rgba(231, 76, 60, 0.1);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+@media (max-width: 1024px) {
+  .categories__section {
+    padding: 80px 0;
+  }
+
+  .categories__wrapper {
+    gap: 60px;
+  }
+
+  .categories__title {
+    font-size: 36px;
+  }
+}
+
+/* Адаптация для планшетов */
+@media (max-width: 768px) {
+
+  .categories__cards,
+  .hit__cards,
+  .stock__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .categories__title {
+    font-size: 32px;
+  }
+}
+
+/* Адаптация для десктопов */
+
+
+/* Для очень маленьких экранов */
+@media (max-width: 480px) {
+
+  .categories__cards,
+  .hit__cards,
+  .stock__cards {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+  }
+
+  .categories__title {
+    font-size: 24px;
+  }
+}

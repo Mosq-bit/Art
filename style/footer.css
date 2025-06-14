@@ -1,0 +1,138 @@
+/* Общие стили */
+.footer__section {
+    padding: 40px 0;
+    background-color: #fbfbfb;
+}
+
+.footer__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.footer__logo {
+    margin-right: 33px;
+}
+
+.footer__address-wrapper {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer__address {
+    padding: 15px 40px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+
+    border-radius: 5px;
+    background-color: #f7f7f7;
+
+    min-width: 200px;
+}
+
+.footer__title,
+.footer__text {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--grey);
+}
+
+.footer__address-text {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.footer__highlight {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: var(--black);
+}
+
+.footer__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    min-width: 200px;
+}
+
+.footer__tel {
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: 0.23em;
+    color: var(--black);
+    transition: all .4s ease-in;
+}
+
+.footer__tel:hover {
+    color: var(--hover-pink2);
+}
+
+.footer__contacts-social {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    flex-wrap: wrap;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+
+}
+
+.footer__social-icon {
+    width: 30px;
+    height: 30px;
+    transition: all .4s ease-in;
+}
+
+.footer__social-icon:hover {
+    stroke: var(--hover-pink2);
+}
+
+.footer__contacts-social--highlight {
+    font-weight: 400;
+    font-size: 18px;
+    color: #5e5e5e;
+}
+
+
+@media(max-width: 768px) {
+
+    .footer__wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: auto;
+    }
+
+    .footer__logo {
+    }
+
+    .footer__address-wrapper {
+        flex-direction: flex-column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .footer__address,
+    .footer__contacts {
+        width: auto;
+        text-align: center;
+    }
+
+    .footer__tel {
+        font-size: 24px;
+    }
+
+    .footer__contacts-social {
+        justify-content: center;
+    }
+}
